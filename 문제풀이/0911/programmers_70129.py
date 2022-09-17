@@ -14,6 +14,7 @@ while s != "1":
     s = len(s)
 
     tmp = '' 
+    
     while s:
         tmp = str(s%2) + tmp
         s//=2
