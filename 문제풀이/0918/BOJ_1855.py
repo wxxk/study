@@ -6,13 +6,15 @@ k = int(input())
 word = input()
 arr = []
 
-for i in range(0, len(word), 3):
+for i in range(0, len(word), k):
+    # print(i)
     arr.append(list(word[i:i+k]))
 
 for j in range(len(arr)):
     if j%2 != 0:
         arr[j].reverse()
 
+# print(arr)
 answer = list(map(list, zip(*arr)))
 
 for k in answer:
