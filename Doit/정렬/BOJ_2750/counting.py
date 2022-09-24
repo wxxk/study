@@ -8,7 +8,7 @@ sys.stdin = open('input.txt')
 
 n = int(input())
 numbers = [int(input()) for _ in range(n)]
-counting = [0] * (n)        # 데이터를 담을 수 있는 list생성
+counting = [0] * 1000        # 데이터를 담을 수 있는 list생성
 
 for i in numbers:       # numbers를 돌면서  데이터 값과 동일한 인덱스의 데이터를 1씩 증가
     counting[i-1] += 1      # 숫자와 인덱스  번호를 맞추기 위해 -1
